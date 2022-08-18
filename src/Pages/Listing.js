@@ -1,6 +1,9 @@
+import Footer from "../Components/Footer";
+
 const Listing=()=>{
     return(
         <>
+            <Footer/>
         </>
     );
 }

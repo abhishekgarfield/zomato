@@ -1,0 +1,573 @@
+body,html
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Okra,Helvetica,sans-serif;
+    background-color: whitesmoke;
+}
+
+/* ------ navbar -------- */
+header
+{ background-image: url("./Images/homepage/header_back.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+
+
+.head_cont1
+{
+
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    clear: both;
+    overflow: hidden;
+
+}
+#nav_info h1
+{
+    color: white;
+    font-size: 40px;
+    width: fit-content;
+    margin:0rem;
+    font-weight: 400;
+}
+#nav_info
+{
+    width: fit-content;
+    margin: 2rem auto;
+    text-align: center;
+}
+#nav_options
+{
+    width: 60%;
+    height: 44px;
+    margin: 0rem auto 4rem auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#nav_options > select
+{
+    float: left;
+    height: inherit;
+    width: 50%;
+}
+
+
+#download
+{
+    align-self: flex-start;
+    position: absolute;
+    left: 10rem;
+    font-weight: 800;
+    font-size: 0.9rem;
+
+}
+#nav_title
+{
+    margin-top: 1rem;
+}
+#nav_title >img
+{
+    display: block;
+    width: 26%;
+    height: 100%;
+    margin: auto;
+}
+
+.Nav-Bar ul li:nth-child(2)
+{
+    display: none;
+}
+.Nav-Bar
+{
+    overflow: hidden;
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+}
+.Nav-Bar ul
+{
+    display: flex;
+    list-style-type: none;
+    color:white;
+    margin: 0rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 30px 0px;
+}
+ul li
+{
+    padding: 0% 2%;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: Okra,Helvetica,sans-serif;
+}
+/* order_online */
+#order_online
+{
+    width: 90%;
+    max-width: 1024px;
+    margin:0rem auto 2rem auto;
+}
+#order_online a
+{
+    color: inherit;
+}
+
+#online_cont1
+{
+    display: block;
+    width: 30%;
+    float: left;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 2.5rem 1.5%;
+    border: 0.5px solid rgba(79, 79, 79, 0.701);
+    transition: 0.5s transform;
+}
+#online_cont1:hover
+{
+    transform: scale(1.02);
+}
+#online_cont1 >img
+{
+    display: block;
+    width: 100%;
+    height:8rem;
+}
+#online_cont1 >p
+{
+    color:rgb(79, 79, 79);
+    margin: 0.5rem 1rem ;
+}
+#online_cont1 >h5
+{
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0.5rem 1rem ;
+}
+#popular_local:hover
+{
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.562);
+}
+#online_cont2
+{
+    overflow: hidden;
+    clear: both;
+    padding-bottom: 2rem;
+}
+
+#online_cont2 h2
+{
+    font-size: 30px;
+    font-weight: 300;
+}
+#popular_local
+{
+    width: 29%;
+    border-radius: 1rem;
+    border: 0.5px solid rgba(79, 79, 79, 0.701);
+    padding-left: 1rem;
+    float: left;
+    transition: 0.5s all;
+    margin: 0% 1%;
+
+}
+#popular_local h4
+{
+    font-size: 26px;
+    margin: 0.5rem 0rem;
+    font-weight: 300;
+}
+#popular_local p
+{
+    color:rgb(79, 79, 79);
+}
+/* explore */
+#explore
+{
+    width: 100%;
+    margin: auto;
+    background: rgb(252, 252, 252);
+    padding: 2rem 0rem;
+
+}
+#exp_cont1
+{
+    width: 90%;
+    margin: auto;
+    max-width: 1024px;
+
+}
+#explore h1
+{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+#exp_option ,#exp_option2 ,#exp_option3
+{
+    padding: 1.5%;
+    width:96%;
+    background: rgb(255, 255, 255);
+    border:  1px solid rgb(232, 232, 232);
+    border-radius:1rem;
+    margin-top :1rem;
+}
+#exp_option h2 , #exp_option2 h2 ,#exp_option3 h2
+{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0rem;
+    letter-spacing: 2px;
+
+}
+.option
+{
+    display: none;
+    padding-top: 1rem;
+}
+.option.sho{
+    display: block;
+
+}
+/* app_download */
+#app_download
+{
+    width: 100%;
+    background-color: rgb(255, 251, 247);
+}
+#app_download_cont1
+{
+    width: 85%;
+    max-width: 845px;
+    padding: 5rem 0rem;
+    margin: auto;
+    overflow: hidden;
+
+}
+#app_download_img
+{
+    width: 33%;
+    height: inherit;
+    float: left;
+
+}
+#app_download_img >img
+{
+    width: 85%;
+    height: 21%;
+    margin: 5rem 0rem 0rem 2rem;
+}
+#app_download_form
+{
+    float: left;
+    width: 63%;
+    padding: 2%;
+}
+#app_download_form >h1
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 1rem 0rem 0rem 0rem;
+    letter-spacing: 0.5px;
+}
+#app_download_form >h3
+{
+    color:rgb(79, 79, 79);
+    font-size: 18px;
+    font-weight: 300;
+    width: 90%;
+    margin: 1.5rem 0rem 0rem 0rem ;
+
+}
+#app_download_form >input
+{
+    margin: 1.5rem 0rem 0rem 0rem;
+    letter-spacing: 2px;
+    padding-right: 2px;
+}
+#app_download_form input[type=text]
+{
+    width: 60%;
+    float: left;
+    font-size: 1.1rem;
+    height: 44px;
+    margin: 1rem 1rem 0rem 0rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgb(207, 207, 207);
+}
+#app_download_form button
+{
+    width: 25%;
+    margin: 1rem 0rem;
+    float: left;
+    height: 50px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color:  rgb(239, 79, 95);
+    font-size: 14px;
+    color: white;
+
+
+}
+#app_download_form h5
+{
+    color:rgb(182, 180, 180);
+    font-size: 15px;
+    font-weight: 200;
+    clear: both;
+}
+#app_download_form >img
+{
+    display: block;
+    width: 30%;
+    float: left;
+    padding-right: 20px;
+    height: 40px;
+}
+/*-------------  footer ----------- */
+
+footer
+{
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+}
+footer #logo
+{
+    width: 100%;
+    margin-top: 2rem;
+}
+#foot_option
+{
+    float: right;
+    width: 21%;
+}
+footer select
+{
+
+    margin: 0rem -13px;
+    width: 5rem;
+    padding: 0px;
+    height: 44px;
+    font-size: 1rem;
+}
+.foot_cont
+{
+    width: 20%;
+    float: left;
+}
+.foot_cont >ul
+{
+    list-style-type: none;
+    padding: 0px;
+}
+.foot_cont ul li b
+{
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+.foot_cont ul li
+{
+    padding-top:14px ;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color:rgb(152, 148, 148);
+}
+footer>p
+{
+    font-size: 12px;
+    margin-top: 0rem;
+    color: rgb(79, 79, 79);
+    line-height: 1.7rem;
+
+}
+footer .fa
+{
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 50%;
+    text-align: center;
+}
+.foot_cont ul li i
+{
+    font-size: 0.8rem;
+    width: 0.8rem;
+    text-align: center;
+    height: 0.8rem;
+}
+.foot_cont ul li img
+{
+    width: 88%;
+}
+#foot_option_select1
+{
+    width: 50%;
+    float: left;
+}
+#foot_option_select2
+{
+    width: 50%;
+    float: right;
+}
+
+@media screen and (max-width:790px) {
+
+    .fa-remove {
+        transform: rotateY(180deg);
+        transition: 0.9s;
+    }
+    .fa-bars {
+        transform: rotate(0deg);
+        transition: 0.9s;
+    }
+    .Nav-Bar ul {
+        padding: 0px;
+    }
+    .Nav-Bar #download {
+        display: none;
+    }
+    .Nav-Bar #Phone-Nav {
+        display: block;
+        padding: 20px 30px 0px 30px;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        font-size: 1.5rem;
+    }
+    .Nav-Bar ul li:not(:nth-child(2)) {
+        display: none;
+    }
+    .Nav-Bar.responsive {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        transition: 0.5s;
+    }
+    .Nav-Bar.responsive ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        color: black;
+        margin: 0rem;
+        padding: 4rem 0rem 0rem 0rem;
+        height: 100%;
+        transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .Nav-Bar.responsive ul li:not(:nth-child(2)) {
+        display: block;
+        position: relative;
+        padding: 37px 30px 0px 30px;
+        height: 10%;
+        color: rgba(0, 0, 0, 0.475);
+    }
+    .Nav-Bar.responsive ul li:not(:nth-child(2)):hover {
+        background-color: rgba(211, 211, 211, 0.527);
+    }
+    #nav_info {
+        width: 85%;
+    }
+    #nav_info h1{
+        font-size: 28px;
+    }
+    #nav_title >img
+    {
+        width: 47%;
+    }
+
+    #nav_options
+    {
+        height: 100px;
+        width:80%;
+        margin: 0rem auto 2rem auto;
+    }
+    #nav_options > select
+    {
+        width: 100%;
+        padding: 2% 0%;
+        height: 45%;
+    }
+    .nav_bar #download
+    {
+        display: none;
+    }
+    .food_item_card
+    {
+        flex: 1 0 50%;
+    }
+    #online_cont1>p
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        font-size: 13px;
+    }
+    #popular_local
+    {
+        height: fit-content;
+        padding-left: 0.8rem;
+    }
+    #popular_local >p
+    {
+        margin: 1px;
+        font-size: 16px;
+    }
+    #popular_local >h4
+    {
+        font-size: 16px;
+        margin: 0.5rem 0rem;
+        font-weight: 300;
+    }
+    #online_cont1 >h5
+    {
+        font-size: 14px;
+    }
+    #app_download_img
+    {
+        display: none;
+        visibility: hidden;
+    }
+    #app_download_form
+    {
+        width: 100%;
+    }
+    .foot_cont
+    {
+        width: 50%;
+        float: left;
+        overflow: hidden;
+        height: 13rem;
+    }
+    #foot_option
+    {
+        clear: both;
+        float: none;
+        margin: 1rem 0rem 0rem 0rem;
+        overflow: hidden;
+        width: 40%;
+    }
+    #foot_option_select1 , #foot_option_select2
+    {
+        margin: 0rem;
+        float: left;
+    }
+    footer select
+    {
+        margin: 0rem;
+    }
+    #social_link
+    {
+        display: none;
+        visibility: hidden;
+    }
+    #find_head_cont3_2, #find_head_cont3_3
+    {
+        display: none;
+    }
+}
