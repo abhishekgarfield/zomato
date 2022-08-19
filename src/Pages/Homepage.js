@@ -7,13 +7,15 @@ import Order from "../Images/homepage/explore.jpg";
 import Title from "../Images/homepage/title_img.png"
 import Explore from "../Components/Explore";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Homepage=()=>{
+    const [isHomepage,setIsHomePage]=useState(true);
     return(
         <>
             <header>
                 <div className="head_cont1">
-                    <Navbar />
+                    <Navbar isHomepage={isHomepage} />
                     <div id="nav_title">
                         <img src={Title} alt="company logo"/>
                     </div>
