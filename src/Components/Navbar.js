@@ -2,7 +2,7 @@ const Navbar=()=>{
     const handleClick=(e)=>{
         e.preventDefault();
         const el=document.getElementById("Nav-Bar");
-        if(el.className=="Nav-Bar")
+        if(el.className==="Nav-Bar")
         {
             el.className+=" responsive";
             e.target.className+="fa fa-remove";

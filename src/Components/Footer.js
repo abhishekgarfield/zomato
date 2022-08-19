@@ -6,7 +6,7 @@ const Footer =() =>{
         <>
             <footer>
                 <div id="logo">
-                    <img src={Zomato}/>
+                    <img src={Zomato} alt="company logo"/>
                         <div id="foot_option">
                             <div id="foot_option_select1">
                                 <select>
