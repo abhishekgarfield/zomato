@@ -425,15 +425,15 @@ footer .fa
     #find_head_cont
     {
         max-width: 1024px;
-        margin: 1rem auto 0rem auto;
         width: 90%;
+        padding: 1rem 0rem;
+        margin: auto;
         
     }
     #find_head_cont1
     {
         height: 46px;
         overflow: hidden;
-        margin: 1.5rem auto;
         
     }
     #find_head_cont1_1 , #find_head_cont1_2,
@@ -485,7 +485,7 @@ footer .fa
     {
         width: 20%;
     }
-    #find_head_cont1_3 a
+    #find_head_cont1_3 i
     {
         width: fit-content;
         display: block;
@@ -535,7 +535,7 @@ footer .fa
         float:left;
         background: rgb(252, 238, 192);
    }
-   .find_options a span
+   .find_options span span
     {
         display: block;
         padding: 1.2rem;

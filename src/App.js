@@ -7,8 +7,10 @@ const App =() =>{
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Homepage/>}/>
-                    <Route path="/listing" element={<Listing/>}/>
+                    <Route path="/" >
+                        <Route path="Homepage" index element={<Homepage /> }/>
+                        <Route path="listing" element={ <Listing /> }/>
+                    </Route>
                  </Routes>
             </BrowserRouter>
         </>

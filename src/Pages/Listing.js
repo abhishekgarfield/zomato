@@ -1,10 +1,11 @@
 import Footer from "../Components/Footer";
-import Title from "../Images/homepage/title_img.png"
 import Explore from "../Components/Explore";
 import Zomato from "../Images/homepage/foot_logo.jpg"
 import Delivery from "../Images/find/delivery.png";
 import dine from "../Images/find/dining.png";
 import nightlife from "../Images/find/nighylife.webp";
+import Max from "../Images/find/max.webp"
+import { Link } from "react-router-dom";
 
 
 const Listing=()=>{
@@ -43,9 +44,9 @@ const Listing=()=>{
                 <div id="find_head_cont">
                     <div id="find_head_cont1">
                         <div id="find_head_cont1_1">
-                        <a href="/index.html">
+                        <Link to="/homepage">
                             <img src={Zomato} alt="logo"/>
-                        </a>
+                        </Link>
                         </div>
                         <div id="find_head_cont1_2">
                             <select>
@@ -56,8 +57,8 @@ const Listing=()=>{
                             <input type="text" placeholder="Search for restaurants ,cousines or a dish"/>
                         </div>
                         <div id="find_head_cont1_3">
-                            <a href="#">Login</a>
-                            <a href="#">Sign up</a>
+                            <i>Login</i>
+                            <i>Sign up</i>
                         </div>
                     </div>
                     <div id="find_head_cont2">
@@ -65,13 +66,13 @@ const Listing=()=>{
                     </div>
                     <div id="find_head_cont3">
                         <div id="find_head_cont3_1" class="find_options">
-                            <a href="#"><div class="find_options_img" id="food"><img src={Delivery} alt="delivery"/></div><span style={{color: "red"}}>Delivery</span></a>
+                            <span><div class="find_options_img" id="food"><img src={Delivery} alt="delivery"/></div><span style={{color: "red"}}>Delivery</span></span>
                         </div>
                         <div id="find_head_cont3_2" class="find_options">
-                            <a href="#"><div class="find_options_img" id="dining"><img src={dine} alt="dining"/></div><span style={{color:"rgb(105, 105, 105)"}}>Dining</span></a>
+                            <span><div class="find_options_img" id="dining"><img src={dine} alt="dining"/></div><span style={{color:"rgb(105, 105, 105)"}}>Dining</span></span>
                         </div>
                         <div id="find_head_cont3_3" class="find_options">
-                            <a href="#"><div class="find_options_img" id="nightlife"><img src={nightlife} alt="night"/></div><span style={{color:"rgb(105, 105, 105)"}}>Night life</span></a>
+                            <span><div class="find_options_img" id="nightlife"><img src={nightlife} alt="night"/></div><span style={{color:"rgb(105, 105, 105)"}}>Night life</span></span>
                         </div>
                     </div>
                 </div>
@@ -151,6 +152,39 @@ const Listing=()=>{
                     
                     <div class="bottom_buttons">
                         <button id="apply">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div id="food_loading_area">
+            <div class="food_loading_area_2">
+                    <div class="food_item_card">
+                        <div class="food_img">
+                        </div>
+                        <div class="food_item_info">
+                            <div class="food_item_info_cont1">
+                                <div class="food_name">
+                                <p > Bhena da dhaba</p>
+                                </div>
+                                <div class="food_rating">
+                                <p>4.0 <i class="fa fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="food_item_info_cont2">
+                                <div class="food_cousine">
+                                    <p> North indian fast food</p>
+                                </div>
+                                <div class="food_price">
+                                    <p>₹100 for one</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style={{backgroundColor:"lightgrey", border: "1px solid lightgray"}}/>
+                        <div class="food_stats">
+                            <p><i class="fa fa-line-chart" style={{color:"white",backgroundColor: "rgb(135, 158, 235)", borderRadius: "50%",padding:"6px",marginRight:"4px"}}></i>
+                                23000 orders plced recently
+                            </p>
+                            <img src={Max} alt="safety"/>
+                        </div>
                     </div>
                 </div>
             </div>
