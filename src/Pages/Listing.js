@@ -25,7 +25,6 @@ const Listing=()=>{
              var label_output=document.getElementsByClassName("label_output");
              for( var i=0;i<label_output.length;i++)
              {
-
                 label_output[i].style.display ="none";
              }
              document.getElementById(labelname).style.display="block";
@@ -65,122 +64,122 @@ const Listing=()=>{
                         <span id="path">Home / india / chandigarh / Mohali </span>
                     </div>
                     <div id="find_head_cont3">
-                        <div id="find_head_cont3_1" class="find_options">
-                            <span><div class="find_options_img" id="food"><img src={Delivery} alt="delivery"/></div><span style={{color: "red"}}>Delivery</span></span>
+                        <div id="find_head_cont3_1" className="find_options">
+                            <span><div className="find_options_img" id="food"><img src={Delivery} alt="delivery"/></div><span style={{color: "red"}}>Delivery</span></span>
                         </div>
-                        <div id="find_head_cont3_2" class="find_options">
-                            <span><div class="find_options_img" id="dining"><img src={dine} alt="dining"/></div><span style={{color:"rgb(105, 105, 105)"}}>Dining</span></span>
+                        <div id="find_head_cont3_2" className="find_options">
+                            <span><div className="find_options_img" id="dining"><img src={dine} alt="dining"/></div><span style={{color:"rgb(105, 105, 105)"}}>Dining</span></span>
                         </div>
-                        <div id="find_head_cont3_3" class="find_options">
-                            <span><div class="find_options_img" id="nightlife"><img src={nightlife} alt="night"/></div><span style={{color:"rgb(105, 105, 105)"}}>Night life</span></span>
+                        <div id="find_head_cont3_3" className="find_options">
+                            <span><div className="find_options_img" id="nightlife"><img src={nightlife} alt="night"/></div><span style={{color:"rgb(105, 105, 105)"}}>Night life</span></span>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="filters">
                 <div id="find_head_cont4">
-                    <div class="fiter_buttons" onClick={(e)=>showfilter(e)}>
-                        <span><i class="fa fa-filter"></i>Filters</span>
+                    <div className="fiter_buttons" onClick={(e)=>showfilter(e)}>
+                        <span><i className="fa fa-filter"></i>Filters</span>
                     </div>
                 </div>
             </div>
-            <div class="show_filters" id="show_filters">
-                <div class="show_filters_2">
+            <div className="show_filters" id="show_filters">
+                <div className="show_filters_2">
                     <h1>Filters</h1>
-                    <i class="fa fa-remove" onClick={(e)=>showfilter(e)}></i>
-                    <div class="tabs">
-                        <div class="labels">
-                            <div class="label" id="default"  onClick={(e)=>show(e,'sort_by')}>
+                    <i className="fa fa-remove" onClick={(e)=>showfilter(e)}></i>
+                    <div className="tabs">
+                        <div className="labels">
+                            <div className="label" id="default"  onClick={(e)=>show(e,'sort_by')}>
                                 <h1>Sort by</h1>
                             </div>
-                            <div class="label"onClick={(e)=>show(e,'Cusines')}>
+                            <div className="label"onClick={(e)=>show(e,'Cusines')}>
                                 <h1>Cusines</h1>
                             </div>
-                            <div class="label"  onClick={(e)=>show(e,'Rating')}>
+                            <div className="label"  onClick={(e)=>show(e,'Rating')}>
                                 <h1>Rating</h1>
                             </div>
-                            <div class="label" Cost_per_person  onClick={(e)=>show(e,'Cost_per_person')}>
+                            <div className="label"   onClick={(e)=>show(e,'Cost_per_person')}>
                                 <h1>Cost per person</h1>
                             </div>
                         </div>
-                        <div class="label_output" id="sort_by">
+                        <div className="label_output" id="sort_by">
                             <form>
-                                <div class="radios">
-                                    <input type="radio" name="sort_by" id="Popularity"value="Popularity"/>
-                                    <label for="Popularity">Popularity</label>
+                                <div className="radios">
+                                    <input type="radio" name="sort_by" id="Popularity"/>
+                                    <label htmlFor="Popularity">Popularity</label>
                                 </div>
-                                <div class="radios">
-                                    <input type="radio" name="sort_by" id="Ratings" value="Rating"/>
-                                    <label for="Ratings">Rating: High to Low</label>
+                                <div className="radios">
+                                    <input type="radio" name="sort_by" id="Ratings"/>
+                                    <label htmlFor="Ratings">Rating: High to Low</label>
                                 </div>
-                                <div class="radios">
-                                    <input type="radio" id="Delivery_Time" name="sort_by" value="Delivery_Time"/>
-                                    <label for="Delivery_Time">Delivery Time</label>
+                                <div className="radios">
+                                    <input type="radio" id="Delivery_Time" name="sort_by" />
+                                    <label htmlFor="Delivery_Time">Delivery Time</label>
                                 </div>
-                                <div class="radios">    
-                                    <input type="radio" name="sort_by" id="Cost_Low_to_High" value="Cost_Low_to_High"/>
-                                    <label for="Cost_Low_to_High">Cost: Low to High</label>
+                                <div className="radios">    
+                                    <input type="radio" name="sort_by" id="Cost_Low_to_High" />
+                                    <label htmlFor="Cost_Low_to_High">Cost: Low to High</label>
                                 </div>
-                                <div class="radios">    
-                                    <input type="radio" name="sort_by" id="Cost_Hight_to_Low" value="Cost_Hight_to_Low"/>
-                                    <label for="Cost_Hight_to_Low">Cost: Hight to Low</label>
+                                <div className="radios">    
+                                    <input type="radio" name="sort_by" id="Cost_Hight_to_Low" />
+                                    <label htmlFor="Cost_Hight_to_Low">Cost: Hight to Low</label>
                                 </div>
                             </form>
                         </div>
-                        <div class="label_output" id="Cusines">
+                        <div className="label_output" id="Cusines">
                             <form id="rad">
-                                <div class="checks">
+                                <div className="checks">
                                     <input type="checkbox" name="Cousines" id="American"/>
-                                    <label for="American">American</label>
+                                    <label htmlFor="American">American</label>
                                 </div>
-                                <div class="checks">
+                                <div className="checks">
                                     <input type="checkbox" name="Cousines" id="andhra"/>
-                                    <label for="andhra">andhra</label>
+                                    <label htmlFor="andhra">andhra</label>
                                 </div>
                             </form>
                         </div>
-                        <div class="label_output" id="Rating">
-                            <h1 style={{color:"red" , margin: "1rem"}}>Value: <span id="demo"></span></h1>
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange"/>
+                        <div className="label_output" id="Rating">
+                            <h1 style={{color:"red" , margin: "1rem"}}> <span id="demo"></span></h1>
+                            <input type="range" min="1" max="100" defaultValue="50" className="slider" id="myRange"/>
                         </div>
-                        <div class="label_output" id="Cost_per_person">
+                        <div className="label_output" id="Cost_per_person">
                             <h1 style={{color:"red" , margin: "1rem"}}>Value: <span id="demo1"></span></h1>
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange1"/>
+                            <input type="range" min="1" max="100" defaultValue="50" className="slider" id="myRange1"/>
                         </div>
                         
                     </div>
                     
-                    <div class="bottom_buttons">
+                    <div className="bottom_buttons">
                         <button id="apply">Apply</button>
                     </div>
                 </div>
             </div>
             <div id="food_loading_area">
-            <div class="food_loading_area_2">
-                    <div class="food_item_card">
-                        <div class="food_img">
+            <div className="food_loading_area_2">
+                    <div className="food_item_card">
+                        <div className="food_img">
                         </div>
-                        <div class="food_item_info">
-                            <div class="food_item_info_cont1">
-                                <div class="food_name">
+                        <div className="food_item_info">
+                            <div className="food_item_info_cont1">
+                                <div className="food_name">
                                 <p > Bhena da dhaba</p>
                                 </div>
-                                <div class="food_rating">
-                                <p>4.0 <i class="fa fa-star"></i></p>
+                                <div className="food_rating">
+                                <p>4.0 <i className="fa fa-star"></i></p>
                                 </div>
                             </div>
-                            <div class="food_item_info_cont2">
-                                <div class="food_cousine">
+                            <div className="food_item_info_cont2">
+                                <div className="food_cousine">
                                     <p> North indian fast food</p>
                                 </div>
-                                <div class="food_price">
+                                <div className="food_price">
                                     <p>₹100 for one</p>
                                 </div>
                             </div>
                         </div>
                         <hr style={{backgroundColor:"lightgrey", border: "1px solid lightgray"}}/>
-                        <div class="food_stats">
-                            <p><i class="fa fa-line-chart" style={{color:"white",backgroundColor: "rgb(135, 158, 235)", borderRadius: "50%",padding:"6px",marginRight:"4px"}}></i>
+                        <div className="food_stats">
+                            <p><i className="fa fa-line-chart" style={{color:"white",backgroundColor: "rgb(135, 158, 235)", borderRadius: "50%",padding:"6px",marginRight:"4px"}}></i>
                                 23000 orders plced recently
                             </p>
                             <img src={Max} alt="safety"/>
